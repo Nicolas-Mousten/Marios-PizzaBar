@@ -174,7 +174,13 @@ public class MainMenu { //Mohammad & Samuel //
             scanner.nextLine();
 
             ArrayList<Order> archivedOrdersList = new ArrayList<Order>();
+            if(archivedOrders==null){
 
+            }else{
+                for (int i = 0; i < archivedOrders.length; i++) {
+                    archivedOrdersList.add(archivedOrders[i]);
+                }
+            }
 
 
             if ( choiseOFUser == 1) {
@@ -189,6 +195,7 @@ public class MainMenu { //Mohammad & Samuel //
             }
             archivedOrders = archivedOrdersList.toArray(new Order[0]);
             orders = activeOrder.toArray(new Order[0]);
+
         }
     }
 }
