@@ -47,8 +47,8 @@ public class Order {//Ni
         return "Order{" +
                 "customerID=" + customerID +
                 ", productList=" + productListString +
-                ", currentTimeFormatted='" + currentDateFormatted + '\'' +
-                ", currentDateFormatted='" + currentTimeFormatted + '\'' +
+                ", currentDateFormatted='" + currentDateFormatted + '\'' +
+                ", currentTimeFormatted='" + currentTimeFormatted + '\'' +
                 ", total Price='" + combinedPrice + '\'' +
                 '}';
     }
