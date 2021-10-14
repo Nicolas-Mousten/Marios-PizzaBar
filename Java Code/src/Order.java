@@ -33,6 +33,7 @@ public class Order {//Ni
     }
 
 
+
     private int combinedPrice(Pizza[] productList){
         int combinedPrice = 0;
         for (int i = 0; i < productList.length; i++) {
@@ -44,6 +45,16 @@ public class Order {//Ni
 
     @Override
     public String toString() {
+        //Samuel
+        return new String("Order \n" +
+                                    "CustomerID: " + customerID + "\n"+
+                                    "productList: " + productListString  +
+                                    "Date of Order Confirm: '" + currentDateFormatted + "\'\n" +
+                                    "Time of Order Confirm: '" + currentTimeFormatted + "\'\n" +
+                                    "Total Price: '" + combinedPrice + "DKK\'\n");
+    }
+    /*@Override
+    public String toString() {
         return "Order{" +
                 "customerID=" + customerID +
                 ", productList=" + productListString +
@@ -51,5 +62,5 @@ public class Order {//Ni
                 ", currentTimeFormatted='" + currentTimeFormatted + '\'' +
                 ", total Price='" + combinedPrice + '\'' +
                 '}';
-    }
+    }*/
 }

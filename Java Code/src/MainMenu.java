@@ -6,6 +6,10 @@ public class MainMenu { //Mohammad & Samuel //
     public static Order[] orders;
     public static Order[] archivedOrders;
 
+    public static ArrayList<Order> archiveList = new ArrayList<>();
+
+    public static Archive archive = new Archive(archiveList);
+
     public static Pizza hawaii = new Pizza("Hawaii", "ost, tomatsovs, ananas, skinke.",99 );
     public static Pizza mariosSpecial = new Pizza("Mario's Special","ost, tomatsovs, oregano, oliven, mozzarella, basilikum.", 65);
     public static Pizza pepperoni = new Pizza("Pepperoni", "ost, tomatsovs, Pepperoni.", 65);
@@ -34,9 +38,29 @@ public class MainMenu { //Mohammad & Samuel //
             } else if (pressedNumber == 3) {
                 activeOrders();
             } else if (pressedNumber == 4) {
-                for (int i = 0; i < archivedOrders.length; i++) {
-                    System.out.println(archivedOrders[i]);
+
+                //Samuel
+                System.out.println("Archive Menu \n");
+                System.out.println( "1. for printing Archive \n"+
+                                    "2. for deleting an element in archive \n" +
+                                    "3. for something else \n");
+                int archiveChoice = scanner.nextInt();
+                switch(archiveChoice) {
+                    case 1:
+                        if(archivedOrders != null) {
+                            for (Order order: archivedOrders
+                            ) {
+                                System.out.println(order);
+                            }
+                        }
+
+                        break;
+                    case 2:
+                        System.out.println("Pending functionality");
+                        break;
                 }
+               System.out.println("Inside Archive menu tab");
+
             } else if (pressedNumber >= 4) {
                 java.lang.System.out.println("you only have 4 options");
             }
@@ -46,7 +70,7 @@ public class MainMenu { //Mohammad & Samuel //
     public static Order[] addOneElementToOrder(Order[] oldArray, Order newObject){ //Nicolas
         int oldArrayLength;
         if (oldArray == null){
-            oldArrayLength =0;
+            oldArrayLength = 0;
         }else{
             oldArrayLength = oldArray.length;
         }
@@ -199,4 +223,5 @@ public class MainMenu { //Mohammad & Samuel //
         }
     }
 }
+
 

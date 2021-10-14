@@ -13,13 +13,20 @@ public class Pizza {
     public int getPrice(){
         return this.price;
     }
-    @Override
+
+    public String toString() {
+        //Samuel
+        return new String(  "Pizza: " + pizzaType + "\n" +
+                            "Ingredients: " + ingredients + "\n" +
+                            "Price: " + price + "\n");
+    }
+    /*@Override
     public String toString() {
         return "Pizzas{" +
                 "pizzaType='" + pizzaType + '\'' +
                 ", ingredients='" + ingredients + '\'' +
                 ", price=" + price +
                 '}';
-    }
+    }*/
 
 }
