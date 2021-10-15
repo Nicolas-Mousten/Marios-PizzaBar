@@ -6,9 +6,13 @@ public class MainMenu { //Mohammad & Samuel //
     public static Order[] orders;
     public static Order[] archivedOrders;
 
-    public static ArrayList<Order> archiveList = new ArrayList<>();
 
-    public static Archive archive = new Archive(archiveList);
+
+    public static ArrayList<Order> archiveList = new ArrayList<>();     //vad er dette?
+
+    public static Archive archive = new Archive(archiveList);           //vad er dette?
+
+
 
     public static Pizza hawaii = new Pizza("Hawaii", "ost, tomatsovs, ananas, skinke.",99 );
     public static Pizza mariosSpecial = new Pizza("Mario's Special","ost, tomatsovs, oregano, oliven, mozzarella, basilikum.", 65);

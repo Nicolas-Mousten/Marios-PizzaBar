@@ -55,14 +55,5 @@ public class Order {//Ni
                                     "Time of Order Confirm: '" + currentTimeFormatted + "\'\n" +
                                     "Total Price: '" + combinedPrice + "DKK\'\n");
     }
-    /*@Override
-    public String toString() {
-        return "Order{" +
-                "customerID=" + customerID +
-                ", productList=" + productListString +
-                ", currentDateFormatted='" + currentDateFormatted + '\'' +
-                ", currentTimeFormatted='" + currentTimeFormatted + '\'' +
-                ", total Price='" + combinedPrice + '\'' +
-                '}';
-    }*/
+
 }
