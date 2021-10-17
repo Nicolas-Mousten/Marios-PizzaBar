@@ -8,9 +8,9 @@ public class MainMenu { //Mohammad & Samuel //
 
 
 
-    public static ArrayList<Order> archiveList = new ArrayList<>();     //vad er dette?
+    public static ArrayList<Order> archiveList = new ArrayList<>();
 
-    public static Archive archive = new Archive(archiveList);           //vad er dette?
+    public static Archive archive = new Archive(archiveList);
 
 
 
@@ -179,6 +179,7 @@ public class MainMenu { //Mohammad & Samuel //
             for (int i = 0; i < activeOrder.size(); i++) {
                 System.out.println(activeOrder.get(i));
             }
+
 
             int idChoice = scanner.nextInt();
 

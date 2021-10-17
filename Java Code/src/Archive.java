@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Archive {
 
     //Samuel
+    //Følgende kode er mit bud på et arkiv. Her ville det være fordelagtigt at få lagt informationen  over i et tekstdokument eller anden type fil.
     ArrayList<Order> archiveList;
 
 
